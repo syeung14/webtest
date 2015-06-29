@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -13,28 +13,30 @@
 </head>
 <body>
 
-here!
+	here!
 
-<%@ page language="java"%>
-<%! int count = 0;%>
-<% count ++; %>
+	<%@ page language="java"%>
+	<%!int count = 0;%>
+	<%
+		count++;
+	%>
 
-<%= count  %>
+	<%=count%>
 
 
-<!-- The labels and ids have been omitted for brevity.  -->
-<form:form commandName="MyModel"1
-           name="myForm" 
-           action="${pageContext.request.contextPath}/MyController/saveModel.action"2
+	<!-- The labels and ids have been omitted for brevity.  -->
+	<form:form commandName="MyModel" 1
+           name="myForm"
+		action="${pageContext.request.contextPath}/MyController/saveModel.action"
            method="post">
-   <form:input path="name"/>3
+		<form:input path="name" />3
    <form:textarea path="description" rows="3" cols="20" />
-   <form:checkbox path="validated" value="Magic"/>
-   <form:select path="country">
-      <form:option value="-" label="--Select Country"/>
-      <form:options items="${countries}"/>4
+		<form:checkbox path="validated" value="Magic" />
+		<form:select path="country">
+			<form:option value="-" label="--Select Country" />
+			<form:options items="${countries}" />4
    </form:select>
-   <form:radiobuttons path="color" items="${colors}" />5
+		<form:radiobuttons path="color" items="${colors}" />5
 
    <input type="submit" value="OK" />6
 </form:form>

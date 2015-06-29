@@ -60,23 +60,6 @@
         </tr>
     </table>
 </form:form>
-<c:if test="${fn:length(userList) > 0}">
-    <table cellpadding="5">
-        <tr class="even">
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Country</th>
-            <th>About You</th>
-        </tr>
-        <c:forEach items="${userList}" var="user" varStatus="status">
-            <tr class="<c:if test="${status.count % 2 == 0}">even</c:if>">
-                <td>${user.name}</td>
-                <td>${user.gender}</td>
-                <td>${user.country}</td>
-                <td>${user.aboutYou}</td>
-            </tr>
-        </c:forEach>
-    </table>
-</c:if>
+
 </body>
 </html>
