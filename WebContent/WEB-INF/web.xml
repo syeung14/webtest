@@ -13,9 +13,9 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 	
-  <display-name>Court Reservation System</display-name>
+	<display-name>Court Reservation System</display-name>
 
-    <context-param>
+<!-- 	 <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>/WEB-INF/court-service.xml</param-value>
     </context-param>
@@ -24,7 +24,7 @@
         <listener-class>
             org.springframework.web.context.ContextLoaderListener
         </listener-class>
-    </listener>
+    </listener> -->
 
     <servlet>
         <servlet-name>court</servlet-name>

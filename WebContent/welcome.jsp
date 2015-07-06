@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Welcome !!!</title>
 </head>
 <body>
 
@@ -24,22 +24,22 @@
 	<%=count%>
 
 
-	<!-- The labels and ids have been omitted for brevity.  -->
+	<!-- The labels and ids have been omitted for brevity.  --><%-- 
 	<form:form commandName="MyModel" 1
-           name="myForm"
+	           name="myForm"
 		action="${pageContext.request.contextPath}/MyController/saveModel.action"
-           method="post">
+		method="post">
 		<form:input path="name" />3
-   <form:textarea path="description" rows="3" cols="20" />
+	   <form:textarea path="description" rows="3" cols="20" />
 		<form:checkbox path="validated" value="Magic" />
 		<form:select path="country">
 			<form:option value="-" label="--Select Country" />
 			<form:options items="${countries}" />4
-   </form:select>
+	   </form:select>
 		<form:radiobuttons path="color" items="${colors}" />5
-
-   <input type="submit" value="OK" />6
-</form:form>
+	
+	   <input type="submit" value="OK" />6
+	</form:form> --%>
 
 </body>
 </html>
